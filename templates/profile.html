@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logged in</title>
+</head>
+<body>
+
+<img src="{{user.socialaccount_set.all.0.get_avatar_url}}" />
+<p>Full Name :- {{user.socialaccount_set.all.0.extra_data.name}}</p>
+<p>UserName :- {{ user.get_username }}</p>
+
+</body>
+</html>
